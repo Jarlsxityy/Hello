@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#img1 {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fafafa;
+  padding: 20px;
+}
+
+header,
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+nav ul {
+  list-style: none; /* Menghilangkan bullet point */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Membuat navbar sejajar */
+  gap: 10px; /* Memberi jarak antar item */
+}
+
+nav ul li {
+  display: inline; /* Memastikan elemen tetap sejajar */
+  justify-content: center;
+  position: relative; /* Untuk mengatur garis pemisah */
+  padding: 0 10px; /* Memberikan ruang di kiri dan kanan teks */
+}
+
+nav ul li:not(:last-child)::after {
+  content: "|"; /* Menambahkan garis pemisah */
+  position: absolute;
+  right: -10px; /* Menyesuaikan posisi garis */
+  color: white; /* Warna garis */
+}
+
+nav a {
+  color: #fafafa;
+  text-decoration: none; /*Menghilangkan garis dibawah*/
+}
+
+nav a:visited {
+  color: #fafafa;
+}
+
+nav a[href] {
+  color: #fafafa;
+}
+
+nav a[href]:hover {
+  color: gray;
+}
+
+footer {
+  background-color: #bfbfbf;
+  text-align: center; /* Agar teks dan elemen berada di tengah */
+  padding: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Jarak antara "Contact Us" dan email */
+}
+
+footer ul {
+  list-style: none; /* Menghilangkan bullet point */
+  padding: 0;
+}
+
+footer ul li {
+  margin: 5px 0; /* Memberi sedikit jarak antar item */
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: gray;
+}
+
+.footer-text {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
